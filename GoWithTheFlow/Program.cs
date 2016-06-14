@@ -27,7 +27,17 @@ namespace GoWithTheFlow
 
                     if (downPayment == "yes")
                     {
-                        Console.WriteLine("You should buy a house");
+                        Console.WriteLine("Will buying a home wipe out all your savings?");
+                        string wipeSavings = Convert.ToString(Console.ReadLine());
+
+                        if (wipeSavings == "no")
+                        {
+                            Console.WriteLine("You should buy a house");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You should rent");
+                        }
                     }
                     else
                     {
