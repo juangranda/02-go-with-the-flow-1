@@ -11,7 +11,7 @@ namespace GoWithTheFlow
         static bool GetChoice()
         {
             string choice = Console.ReadLine();
-            if (choice == "yes")
+            if (choice.ToLower() == "yes")
             {
                 return true;
             }
